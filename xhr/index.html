@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    div {
+      height: 100px;
+      border: 2px solid black;
+      margin: 5px;
+    }
+
+    div button {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script src="./xhr.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <div id="get-wrapper">
+      <button onclick="getRequest(1)">GET</button>
+      <button onclick="getRequest('abcd')">GET 404</button>
+      <span>Réponse du serveur : </span>
+      <span id="get-text"></span>
+    </div>
+    <div id="post-wrapper">
+      <label>Message à envoyer: <input id="server-message"></label>
+      <button onclick="postRequest()">POST</button>
+      <span>Réponse du serveur : </span>
+      <span id="post-text"></span>
+    </div>
+  </main>
+</body>
+
+</html>
