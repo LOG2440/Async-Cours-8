@@ -16,15 +16,15 @@
       margin-bottom: 10px;
     }
   </style>
-  <script src="./xhr.js" defer></script>
-  <title>Document</title>
+  <script src="./fetch.js" defer></script>
+  <title>Exemple de Fetch</title>
 </head>
 
 <body>
   <main>
     <div id="get-wrapper">
-      <button onclick="getRequest(1)">GET</button>
-      <button onclick="getRequest('abcd')">GET 404</button>
+      <button onclick="getRequestAsync(1)">GET</button>
+      <button onclick="getRequestAsync('abcd')">GET 404</button>
       <span>Réponse du serveur : </span>
       <span id="get-text"></span>
     </div>
